@@ -1,0 +1,536 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+{% load static %}
+
+
+
+
+{% if user.is_authenticated %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>BEREA</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+
+
+
+
+<!-- Favicons -->
+<link href="{% static 'assets/img/berea.jpg' %}" rel="icon">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Cardo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+<link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+<link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+<!-- Main CSS File -->
+<link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: PhotoFolio
+  * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+
+
+
+
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="100">
+            <h2><span>                  </span> <span class="underlight"> BEREA </span> <br> <span> ቤርያ ተንቀሳቃሽ ቤተ መጻሕፍት </span></h2>
+            <p>Discover a world of endless learning with our comprehensive online library. Whether you're a student, researcher, or an avid reader, we offer a vast collection of eBooks and journals at your fingertips. With easy access, a user-friendly interface, you can explore, learn, and grow – anytime, anywhere. Dive into a wealth of knowledge today and start your journey towards discovery!</p>
+            <a href="{% url 'contact' %}" class="btn-get-started">Available for Contact<br></a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </section><!-- /Hero Section -->
+
+
+
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="{% static 'assets/img/book/0.jpg' %}" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/book/0.jpg' %}" title="Trojan Horse<br>
+Donald L.Faris <br>
+80 page" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://t.me/bereaportablelibrary/14" target="new" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+               <p>  </p>
+            </div>
+
+          </div><!-- End Gallery Item -->
+
+
+
+    <!-- Gallery Section 
+    <section id="gallery" class="gallery section">
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+-->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="{% static 'assets/img/book/1.jpg' %}" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/book/1.jpg" title="የእየሱስ ክርስቶስ ማንነት እና የስሕተት ትምህርቶች <br>
+በኤ.ኢ.ኢ. የተዘጋጀ <br>
+51 ገጽ" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://t.me/bereaportablelibrary/31' %}" target="new" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+               <p>  </p>
+            </div>
+
+          </div><!-- End Gallery Item -->
+<br>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="{% static 'assets/img/book/2.jpg' %}" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/book/2.jpg' %}" title="እግዚአብሔርን መፍራት<br> 
+አገልጋይ ሰለሞን አለሙ<br>
+ገጽ 168" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://t.me/bereaportablelibrary/27" target="new" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+
+
+
+
+
+
+
+
+
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="{% static 'assets/img/book/3.jpg' %}" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/book/3.jpg' %}" title="የትሩፋን ናፍቆት 
+የአጫጭር መጣጥፎች መድብል<br{% static '>
+ሰለሞን አበበ ገብረ መድኅን <br>
+264 ገጽ" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://t.me/bereaportablelibrary/28" target="new" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+
+
+
+
+
+
+
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="{% static 'assets/img/book/4.jpg' %}" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/book/4.jpg' %}" title="የቅዱሳን በአየር መነጠቅ<br>
+በመጋቢ ተኩ ከበደ <br>
+212 ገጽ" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://t.me/bereaportablelibrary/29" target="new" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+
+
+
+
+
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="{% static 'assets/img/book/5.jpg' %}" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/book/5.jpg' %}" title="እግዚአብሔር መለኮት <br>
+መልሳቸው መስፍን (ዶ/ር)<br>
+200 ገጽ" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://t.me/bereaportablelibrary/30" target="new" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+
+
+
+
+
+
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="{% static 'assets/img/book/6.jpg' %}" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/book/6.jpg' %}" title="የ 'ለምን አሻራ' የሚጠይቅ ትውልድ ታሪክ ሰርቶ ያልፋል!<br>
+አዱኛ ሂርጳ<br>
+294 ገጽ" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://t.me/bereaportablelibrary/23" target="new" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+
+
+
+
+
+
+
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="{% static 'assets/img/book/7.jpg' %}" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="{% static 'assets/img/book/7.jpg' %}" title="የባስሊቆስ ዕንባ<br>
+ትዕግስት ታፈረ ሞላ<br>
+220 ገጽ " class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://t.me/bereaportablelibrary/24" target="new" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
+
+
+
+
+
+        <!-- End Gallery Item -->
+<center><a href="gallery.html">see more</a> </center> 
+        </div>
+
+      </div>
+
+    </section><!-- /Gallery Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Berea</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="" target="new"><i class="bi bi-twitter-x"></i></a>
+        <a href="" target="new"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/nardos.agide/" target="new"><i class="bi bi-instagram"></i></a>
+        <a href="https://t.me/bereaportablelibrary" target="new"><i class="bi bi-telegram"></i></a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://www.instagram.com/samx1811/">@Samuel A.</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="line"></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js '%}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+
+
+
+
+
+
+{% else %}
+<!--
+<div class="col-md-6 offset-md-3">
+<h1>Loginw</h1>
+<br/>
+
+<form method="POST" action="{% url 'home' %}">
+	{% csrf_token %}
+
+  <div class="mb-3">
+    <input type="text" class="form-control" name="username", placeholder="Username" required> <input type="text" class="form-control" name="username", placeholder="Username" required>
+  </div><br/>
+  <div class="mb-3">
+    <input type="password" class="form-control" name="password", placeholder="Password" required>
+  </div>
+  <br/>
+  <button type="submit" class="btn btn-secondary">Login</button>
+
+</form>
+
+
+-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>login Page - Berea</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+ <link href="assets/img/berea.jpg" rel="icon">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Cardo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css" rel="stylesheet' %}">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/css/st.css' %}" rel="stylesheet"> 
+<link href="{% static 'assets/css/c.css' %}" rel="stylesheet">
+  <!-- Main CSS File  -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: PhotoFolio
+  * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+
+
+
+<body class="starter-page-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+   <!--
+      <a href="index.html" >-->
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/blackberea.jpg" alt="berea" width="195px" > -->
+    <!--    <i class="bi bi-camera"></i> -->
+        <!-- <h1 class="sitename">BEREA</h1> -->
+   <!--   </a> -->
+      <nav id="navmenu" class="navmenu">
+        <ul>
+         
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <!--
+        <a href="#" target="new" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" target="new" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/nardos.agide/" target="new" class="instagram"><i class="bi bi-instagram"></i></a>
+         <a href="https://t.me/bereaportablelibrary" target="new"><i class="bi bi-telegram"></i></a> -->
+      </div>
+
+    </div>
+  </header>
+
+
+
+  <section class="sec"> <span></span> </span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+
+   <div class="signin"> 
+
+    <div class="content"> 
+
+<img src="{% static 'assets/img/bere.png' %}" width="400px" >
+
+<form method="POST" action="{% url 'home' %}">
+
+{% csrf_token %}
+
+
+
+
+   <div class="container section-title" data-aos="fade-up">
+     <center>   <h2></h2>
+      <p style="color: #27a776;">SIGN IN</p>
+      </center>
+</div>
+     <div class="form"> 
+
+      <div class="inputBox"> 
+         <input type="text" class="form-control" name="username", placeholder="Username" required> 
+      
+      </div> 
+
+      <div class="inputBox"> 
+  <input type="password" class="form-control" name="password", placeholder="Password" required>
+    
+
+      </div> 
+
+      <div class="links"> <a href="#">Forgot Password</a> <a href=" {% url 'register' %}"  style="color:#27a776">Signup</a> 
+
+      </div> 
+
+      <div class="inputBox" style="color:#27a776"> 
+
+       <input type="submit" value="Login" > 
+
+      </div> 
+</form>
+     </div> 
+
+    </div> 
+
+   </div> 
+
+  </section> 
+
+
+
+
+<!--
+  
+
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyrigh</span> <strong class="px-1 sitename">Berea</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+
+
+      
+
+      <div class="credits">
+
+      -->
+
+      <!--   All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <!--
+        Designed by <a href="https://www.instagram.com/samx1811/">Samuel A.</a>
+      </div>
+    </div>
+
+  </footer>
+-->
+
+  <!-- Scroll Top 
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+-->
+  <!-- Preloader 
+  <div id="preloader">
+    <div class="line"></div>
+  </div>
+-->
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endif %}
+
+{% endblock %}
